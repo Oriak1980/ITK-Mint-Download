@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Redirigiendo...</title>
+    <script>
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Detecta Android
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.mx.itk.mint&pcampaignid=web_share";
+        }
+        // Detecta iPhone/iPad
+        else if (/iPad|iPhone|iPod/.test(userAgent)) {
+            window.location.href = "https://oriak1980.github.io/ITK-mint-linktree/";
+        }
+        // Otras plataformas (PC, Mac, Linux)
+        else {
+            window.location.href = "https://mint-collector.com//platform";
+        }
+    </script>
+</head>
+
+<body>
+    <p>Redirigiendo...</p>
+</body>
+
+</html>
